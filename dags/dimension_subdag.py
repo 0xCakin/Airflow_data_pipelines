@@ -15,7 +15,7 @@ def load_dimensional_tables_dag(
         **kwargs
     )
     """
-        Returns a DAG inserts data into a dimensional redshift table from staging tables.
+        This function is created to insert data into a dimensional redshift table from staging tables.
     """
 
     load_dimension_table = LoadDimensionOperator(
