@@ -4,7 +4,7 @@ from airflow.operators.dummy_operator import DummyOperator
 from airflow.operators import (CreateTableOperator, StageToRedshiftOperator, LoadFactOperator,
                                LoadDimensionOperator, DataQualityOperator)
 from helpers import Queries
-from sparkify_dimension_subdag import load_dimension_subdag
+from dimension_subdag import load_dimension_subdag
 from airflow.operators.subdag_operator import SubDagOperator
 
 # AWS_KEY = os.environ.get('AWS_KEY')
